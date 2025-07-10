@@ -1,0 +1,1 @@
+<?php echo $value->create_date; ?>

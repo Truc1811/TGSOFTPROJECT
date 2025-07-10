@@ -1,0 +1,1 @@
+{"all":["faqs","san-pham","gioi-thieu","lien-he","tin-tuc","trang-chu"],"detail":["faqs","thuong-hieu","don-hang","quang-cao","tin-tuc","san-pham","danh-muc","cau-hinh","thong-ke"]}
