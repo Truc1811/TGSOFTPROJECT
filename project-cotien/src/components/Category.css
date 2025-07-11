@@ -1,0 +1,33 @@
+i{
+    margin-right:10px;
+    margin-left:5px;
+}
+.bi-chevron-up, .bi-chevron-down{
+    text-align: end;
+    align-items: end;
+    float: right;
+    font-size:12px
+}
+
+.Category_Title{
+    font-size:14px;
+    font-weight: bold;
+}
+
+.Category , .Account , .Customer , .Investment, .Investment2, .Withdrawal , .Services , .Report, .ServicesProduct , .Articles, .Conversation , .Banner , .Config , .Debt , .Contact, .Loan , .SEO
+
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none !important;
+    text-decoration: none !important;
+    color: white;
+
+}
+
+.Category:hover , .Account:hover , .Customer:hover , .Investment:hover, .Investment2:hover, .Withdrawal:hover , .Services:hover , .Report:hover, .ServicesProduct:hover , .Articles:hover, .Conversation:hover , .Banner:hover , .Config:hover ,.Loan:hover ,.Debt:hover , .Contact:hover , .SEO:hover
+{
+    background-color: rgb(75, 110, 175);
+}
+
+

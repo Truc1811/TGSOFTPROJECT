@@ -1,0 +1,27 @@
+.Header {
+    background-color: white;
+    color: rgb(14, 13, 13);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 1001;
+}
+
+.Header_Logo {
+    margin-left: 40px;
+}
+.Header_Bell .badge {
+    font-size: 0.75rem;        /* Kích thước chữ nhỏ */
+    min-width: 18px;           /* Chiều rộng tối thiểu */
+    height: 18px;              /* Chiều cao cố định */
+    line-height: 18px;         /* Căn giữa text theo chiều dọc */
+      /* Viền trắng */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Đổ bóng */
+  }
+
+
