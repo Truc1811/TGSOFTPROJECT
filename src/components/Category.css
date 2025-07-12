@@ -1,0 +1,452 @@
+/* ==========================================================================
+   CATEGORY CSS - MODERN SIDEBAR NAVIGATION
+   ==========================================================================
+   
+   📋 Features:
+   - Beautiful hover effects and transitions
+   - Modern spacing and typography
+   - Enhanced visual hierarchy
+   - Professional icon styling
+   - Responsive design
+   
+   🎨 Design System:
+   - Consistent spacing and padding
+   - Smooth animations
+   - Professional color scheme
+   - Clear visual feedback
+   
+   ========================================================================== */
+
+/* ==========================================================================
+   CSS VARIABLES
+   ========================================================================== */
+
+:root {
+  /* Category specific variables */
+  --category-padding: 16px 24px;
+  --category-margin: 8px 16px;
+  --category-border-radius: 12px;
+  --category-font-size: 15px;
+  --category-title-size: 16px;
+  --category-icon-size: 18px;
+  --category-chevron-size: 12px;
+  
+  /* Colors */
+  --category-text: rgba(255, 255, 255, 0.9);
+  --category-text-hover: #ffffff;
+  --category-bg-hover: rgba(102, 126, 234, 0.15);
+  --category-bg-active: rgba(102, 126, 234, 0.25);
+  --category-border-hover: rgba(102, 126, 234, 0.3);
+  
+  /* Transitions */
+  --category-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --category-icon-transition: transform 0.3s ease;
+}
+
+/* ==========================================================================
+   ICON STYLING
+   ========================================================================== */
+
+.Category i,
+.Account i,
+.Customer i,
+.Investment i,
+.Investment2 i,
+.Withdrawal i,
+.Services i,
+.Report i,
+.ServicesProduct i,
+.Articles i,
+.Conversation i,
+.Banner i,
+.Config i,
+.Debt i,
+.Contact i,
+.Loan i,
+.SEO i {
+  margin-right: 12px;
+  margin-left: 0;
+  font-size: var(--category-icon-size);
+  transition: var(--category-icon-transition);
+  width: 20px;
+  text-align: center;
+  color: var(--category-text);
+}
+
+/* Chevron icons */
+.bi-chevron-up,
+.bi-chevron-down {
+  margin-right: 0;
+  margin-left: auto;
+  float: right;
+  font-size: var(--category-chevron-size);
+  transition: var(--category-icon-transition);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   CATEGORY TITLE
+   ========================================================================== */
+
+.Category_Title {
+  font-size: var(--category-title-size);
+  font-weight: 700;
+  color: var(--category-text-hover);
+  margin-bottom: 12px;
+  padding: 0 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+}
+
+/* ==========================================================================
+   NAVIGATION ITEMS
+   ========================================================================== */
+
+.Category,
+.Account,
+.Customer,
+.Investment,
+.Investment2,
+.Withdrawal,
+.Services,
+.Report,
+.ServicesProduct,
+.Articles,
+.Conversation,
+.Banner,
+.Config,
+.Debt,
+.Contact,
+.Loan,
+.SEO {
+  margin: var(--category-margin);
+  padding: var(--category-padding);
+  list-style: none !important;
+  text-decoration: none !important;
+  color: var(--category-text);
+  font-size: var(--category-font-size);
+  font-weight: 500;
+  border-radius: var(--category-border-radius);
+  cursor: pointer;
+  transition: var(--category-transition);
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid transparent;
+  backdrop-filter: blur(5px);
+}
+
+/* Hover Effects */
+.Category:hover,
+.Account:hover,
+.Customer:hover,
+.Investment:hover,
+.Investment2:hover,
+.Withdrawal:hover,
+.Services:hover,
+.Report:hover,
+.ServicesProduct:hover,
+.Articles:hover,
+.Conversation:hover,
+.Banner:hover,
+.Config:hover,
+.Loan:hover,
+.Debt:hover,
+.Contact:hover,
+.SEO:hover {
+  background: var(--category-bg-hover);
+  color: var(--category-text-hover);
+  border-color: var(--category-border-hover);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* Active/Selected State */
+.Category.active,
+.Account.active,
+.Customer.active,
+.Investment.active,
+.Investment2.active,
+.Withdrawal.active,
+.Services.active,
+.Report.active,
+.ServicesProduct.active,
+.Articles.active,
+.Conversation.active,
+.Banner.active,
+.Config.active,
+.Loan.active,
+.Debt.active,
+.Contact.active,
+.SEO.active {
+  background: var(--category-bg-active);
+  color: var(--category-text-hover);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateX(6px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* Icon hover effects */
+.Category:hover i,
+.Account:hover i,
+.Customer:hover i,
+.Investment:hover i,
+.Investment2:hover i,
+.Withdrawal:hover i,
+.Services:hover i,
+.Report:hover i,
+.ServicesProduct:hover i,
+.Articles:hover i,
+.Conversation:hover i,
+.Banner:hover i,
+.Config:hover i,
+.Loan:hover i,
+.Debt:hover i,
+.Contact:hover i,
+.SEO:hover i {
+  transform: scale(1.1);
+  color: var(--category-text-hover);
+}
+
+/* Chevron hover effects */
+.Category:hover .bi-chevron-up,
+.Category:hover .bi-chevron-down,
+.Account:hover .bi-chevron-up,
+.Account:hover .bi-chevron-down {
+  color: var(--category-text-hover);
+  transform: scale(1.2);
+}
+
+/* ==========================================================================
+   SUBMENU STYLING
+   ========================================================================== */
+
+/* Submenu container */
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 24px;
+}
+
+.submenu.open {
+  max-height: 500px;
+  padding: 8px 24px 16px 24px;
+}
+
+/* Submenu items */
+.submenu-item {
+  padding: 10px 16px 10px 32px;
+  margin: 4px 0;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--category-transition);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.submenu-item::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  margin-right: 12px;
+  transition: var(--category-transition);
+}
+
+.submenu-item:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: var(--category-text-hover);
+  transform: translateX(4px);
+}
+
+.submenu-item:hover::before {
+  background: rgba(102, 126, 234, 0.8);
+  transform: scale(1.5);
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --category-padding: 14px 20px;
+    --category-margin: 6px 12px;
+    --category-font-size: 14px;
+    --category-title-size: 15px;
+    --category-icon-size: 16px;
+  }
+  
+  .Category_Title {
+    padding: 0 20px;
+    font-size: var(--category-title-size);
+  }
+  
+  .submenu-item {
+    padding: 8px 12px 8px 28px;
+    font-size: 13px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  :root {
+    --category-padding: 12px 16px;
+    --category-margin: 4px 8px;
+    --category-font-size: 13px;
+    --category-icon-size: 15px;
+  }
+  
+  .Category_Title {
+    padding: 0 16px;
+  }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY
+   ========================================================================== */
+
+/* Focus styles */
+.Category:focus,
+.Account:focus,
+.Customer:focus,
+.Investment:focus,
+.Investment2:focus,
+.Withdrawal:focus,
+.Services:focus,
+.Report:focus,
+.ServicesProduct:focus,
+.Articles:focus,
+.Conversation:focus,
+.Banner:focus,
+.Config:focus,
+.Loan:focus,
+.Debt:focus,
+.Contact:focus,
+.SEO:focus {
+  outline: 2px solid rgba(102, 126, 234, 0.5);
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .Category,
+  .Account,
+  .Customer,
+  .Investment,
+  .Investment2,
+  .Withdrawal,
+  .Services,
+  .Report,
+  .ServicesProduct,
+  .Articles,
+  .Conversation,
+  .Banner,
+  .Config,
+  .Debt,
+  .Contact,
+  .Loan,
+  .SEO,
+  .submenu,
+  .submenu-item {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .Category,
+  .Account,
+  .Customer,
+  .Investment,
+  .Investment2,
+  .Withdrawal,
+  .Services,
+  .Report,
+  .ServicesProduct,
+  .Articles,
+  .Conversation,
+  .Banner,
+  .Config,
+  .Debt,
+  .Contact,
+  .Loan,
+  .SEO {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .Category:hover,
+  .Account:hover,
+  .Customer:hover,
+  .Investment:hover,
+  .Investment2:hover,
+  .Withdrawal:hover,
+  .Services:hover,
+  .Report:hover,
+  .ServicesProduct:hover,
+  .Articles:hover,
+  .Conversation:hover,
+  .Banner:hover,
+  .Config:hover,
+  .Loan:hover,
+  .Debt:hover,
+  .Contact:hover,
+  .SEO:hover {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ==========================================================================
+   ADDITIONAL ENHANCEMENTS
+   ========================================================================== */
+
+/* Loading skeleton */
+.category-skeleton {
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    rgba(255, 255, 255, 0.1) 100%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: var(--category-border-radius);
+  height: 48px;
+  margin: var(--category-margin);
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Notification badges */
+.notification-badge {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: #dc3545;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   END OF CATEGORY CSS
+   ========================================================================== */
+
+
