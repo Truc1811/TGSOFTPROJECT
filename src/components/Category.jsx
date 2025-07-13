@@ -154,25 +154,17 @@ function Category() {
       <div className="Customer" onClick={toggleCustomer}>
         <i className="bi bi-people-fill"></i>
         <span className="Customer_Title">Khách hàng</span>
-        {isOpenCustomer ? (
-          <i class="bi bi-chevron-up"></i>
-        ) : (
-          <i class="bi bi-chevron-down"></i>
-        )}
+        {isOpenCustomer }
       </div>
-      {isOpenCustomer && <CustomerList />}
+      {isOpenCustomer }
 
       {/* Menu investment */}
       <div className="Investment" onClick={toggleInvestment}>
         <i className="bi bi-card-list"></i>
         <span className="Investment_Title">Gọi vốn đầu tư</span>
-        {isOpenInvestment ? (
-          <i class="bi bi-chevron-up"></i>
-        ) : (
-          <i class="bi bi-chevron-down"></i>
-        )}
+        {isOpenInvestment }
       </div>
-      {isOpenInvestment && <InvestmentList />}
+      {isOpenInvestment }
       {/* Menu loan */}
       <div className="Loan" onClick={toggleLoan}>
         <i className="bi bi-card-list"></i>

@@ -1,0 +1,36 @@
+.sideBar {
+    position:fixed;
+    height: calc(100vh - 30px);
+    background-color: rgb(45, 61, 77);
+    color: white;
+    width: 200px;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto; 
+    box-sizing: content-box;
+}
+
+.sideBar.open {
+    transform: translateX(0);
+}
+
+.sideBar.closed {
+    transform: translateX(-100%);
+}
+
+.sideBar::-webkit-scrollbar{
+    width:6px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.sideBar::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 3px;
+}
+

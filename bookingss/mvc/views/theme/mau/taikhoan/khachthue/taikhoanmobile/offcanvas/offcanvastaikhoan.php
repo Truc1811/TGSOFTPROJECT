@@ -1,0 +1,65 @@
+
+<style>
+    .tab-scroll-tk-ct::-webkit-scrollbar{
+        display: none;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card border-0">
+                <div class="card-body border-0 tab-scroll-tk-ct" style="overflow-y: auto;height:80vh">
+                    <!-- Ảnh đại diện -->
+                    <div class="text-center mb-4">
+                        <img src="public/upload/<?php echo $data['cus_image'];  ?>" alt="Avatar" class="rounded-circle mb-2" width="120" height="120">
+                        <div>
+                            <button class="btn btn-sm btn-outline-primary">Thay ảnh đại diện</button>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin cá nhân -->
+                    <form class="text-black-50">
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label ">Họ và tên</label>
+                            <input type="text" class="form-control" id="fullname" value="<?php echo $mang['cus_name'] ?>">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" value="<?php echo $mang['cus_email'] ?>">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control" id="phone" value="<?php echo $mang['cus_phone'] ?>">
+                        </div>
+
+                        <hr />
+
+                        <!-- Mật khẩu -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mật khẩu hiện tại</label>
+                            <input type="password" class="form-control" id="password" placeholder="••••••••">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">Mật khẩu mới</label>
+                            <input type="password" class="form-control" id="newPassword">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Xác nhận mật khẩu mới</label>
+                            <input type="password" class="form-control" id="confirmPassword">
+                        </div>
+
+                        <!-- Nút lưu -->
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-success btn-sm">Lưu thay đổi</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

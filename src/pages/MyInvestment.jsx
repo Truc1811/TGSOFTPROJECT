@@ -4,7 +4,7 @@ import './DashboardMenu.css'
 function MyInvestment() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid mt-5">
         <div className="row mt-3">
           <div className="col-12">
             {/* Stats Cards */}

@@ -1,0 +1,46 @@
+.dashboardMenu{
+    background-color: rgb(203, 203, 205);
+}
+.dashboardMenu table{
+  margin-top: 5px;;
+}
+button{
+  margin-left:0px;
+  margin-right:10px;
+  width:auto;
+}
+
+/* Fix h5 underline on mobile */
+h5, .card-title {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Ensure cards look good on mobile */
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Fix timeline h6 titles */
+h6.fw-bold {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove any unwanted borders on headings */
+h1, h2, h3, h4, h5, h6 {
+  border: none !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .card-container {
+      margin-bottom: 1rem;
+    }
+  }

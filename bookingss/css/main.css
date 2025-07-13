@@ -1,0 +1,249 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 6, 92, 172;
+    --bs-secondary-rgb: 32,32,32;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 236, 29, 36;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-primary-text-emphasis: #052c65;
+    --bs-secondary-text-emphasis: #2b2f32;
+    --bs-success-text-emphasis: #0a3622;
+    --bs-info-text-emphasis: #055160;
+    --bs-warning-text-emphasis: #664d03;
+    --bs-danger-text-emphasis: #58151c;
+    --bs-light-text-emphasis: #495057;
+    --bs-dark-text-emphasis: #495057;
+    --bs-primary-bg-subtle: #cfe2ff;
+    --bs-secondary-bg-subtle: #e2e3e5;
+    --bs-success-bg-subtle: #d1e7dd;
+}
+
+/*--------------font-family and font siza ------------------*/
+    /*----400,500,600,700----*/
+    @font-face {
+        font-family:Roboto-Regular;
+        src: url(../font/Roboto-Regular.woff2);
+    }
+    @font-face {
+        font-family:Roboto-Bold;
+        src: url(../font/Roboto-Bold.woff2);
+    }
+    @font-face {
+        font-family:RobotoCondensed-Regular;
+        src: url(../font/RobotoCondensed-Regular.woff2);
+    }
+    @font-face {
+        font-family:RobotoCondensed-Bold;
+        src: url(../font/RobotoCondensed-Bold.woff2);
+    }
+   
+    *{
+        font-family: Roboto-Regular;
+        font-size: 14px;
+    }
+    
+    
+    .chu-bold{
+        font-family: Roboto-Bold;
+    }
+    .chu-cbold{
+        font-family: RobotoCondensed-Bold;
+    }
+    .chu-cregular{
+        font-family: RobotoCondensed-Regular;
+    }
+    
+    .fs-12{
+        font-size: 12px;
+    }
+    .fs-13{
+        font-size: 13px;
+    }
+    .fs-16{
+        font-size: 16px;
+    }
+    .fs-44{
+        font-size: 44px;
+    }
+   
+/*--------------btn ------------------*/
+    .bg_line{
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+        background-position: left top;
+        background-image: url(public/demo/nen-line.jpg);
+    }
+    .btn-outline-primary{
+        color: rgb(var(--bs-primary-rgb)) !important;
+        border-color:  rgb(var(--bs-primary-rgb)) !important;
+    }
+    .btn-outline-primary:hover{
+        background-color: rgb(var(--bs-primary-rgb)) !important;
+        color: white !important;
+        border-color:  rgb(var(--bs-primary-rgb)) !important;
+    }
+    .btn-primary{
+        background-color: rgb(var(--bs-primary-rgb)) !important;
+        color: white !important;
+        border-color:  rgb(var(--bs-primary-rgb)) !important;
+    }
+    .btn-primary:hover{
+        background-color: rgb(20, 86, 137) !important;
+        color: white !important;
+        border-color:  rgb(20, 86, 137) !important;
+    }
+    .btn-van{
+        background-color: rgb(110, 197, 221)  !important;
+        color: white !important;
+        border-color: rgb(110, 197, 221)  !important;
+    }
+    .btn-van:hover{
+        background-color: rgb(87, 166, 186) !important;
+        color: white !important;
+        border-color: rgb(87, 166, 186) !important;
+    }
+
+    .border-primary {
+        border-color: rgb(var(--bs-primary-rgb)) !important;
+    }
+
+/*--------------hover ------------------*/
+    .hover_chu_white:hover{
+        color: white !important;
+        transition-duration: 0.2s;
+    }
+    .hover_chu_primary:hover{
+        color: rgb(var(--bs-primary-rgb)) !important;
+        transition-duration: 0.2s;
+    }
+/*--------------logo ------------------*/
+    .logo_k{
+       height: 90px;
+    }
+
+/*-------------- thẻ menu ----------------------------*/
+
+    .rounded-4{
+        border-radius: 4vw;
+    }
+
+/*-------------- thẻ menu ----------------------------*/
+    .cursor{
+        cursor: pointer;
+    }
+    .nut-do{
+        position: relative;
+        transition-duration: 0.4s;
+    }
+    .nut-do-mot{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        transform: skewX(-30deg);
+    }
+    .nut-do:hover .nut-do-mot{
+        background-color: rgb(8, 51, 160) !important;
+        transition-duration: 0.4s;
+    }
+    .nut-do:hover{
+        cursor: pointer;
+    }
+    .nut-do-hai{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    .scrollbar_h::-webkit-scrollbar {
+        height: 6px;
+        background-color: #F5F5F5;
+    } 
+
+    .scrollbar_h::-webkit-scrollbar-thumb {
+        background-color: rgb(var(--bs-primary-rgb));
+    }
+
+    .scrollbar_h::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    .scrollbar::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    } 
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color: rgb(var(--bs-primary-rgb));
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+@media(min-width: 992px){
+   
+    .rounded-4{
+        border-radius: 0.6vw;
+    }
+
+    .container, .container-lg, .container-md, .container-sm{
+        max-width: 890px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 950px;
+    }
+}
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 1170px;
+    }
+}
+
+/*---------------------------------------------------*/
+input,select,button, textarea, ul, li, a:focus{
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    outline: 0;
+}

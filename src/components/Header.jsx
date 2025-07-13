@@ -6,35 +6,52 @@ import './Header.css'
 function Header({ onToggleSideBar }) {
   return (
     <>
-      <header className="Header d-flex align-items-center justify-content-between flex-nowrap">
-        <div className="filter text-black fw-bold flex-shrink-0 ">
-          <i onClick={onToggleSideBar} className="bi bi-filter"></i>
-        </div>
-        <div className="Header_Logo d-flex align-items-center justify-content-center flex-grow-1 flex-shrink-1 mx-2 mx-md-3">
-          <img src="/image/logo.png" alt="Logo" className="img-fluid" />
+      <div className="row Header d-flex align-items-center justify-content-between ">
+        {/* Menu Toggle */}
+        <div
+          className=" col-1 col-md-2 filter text-white fw-bold "
+          role="button"
+          aria-label="Toggle Sidebar"
+        >
+          <i onClick={onToggleSideBar} className="bi bi-list"></i>
         </div>
 
-        <div className="Header_Items d-flex align-items-center flex-nowrap flex-shrink-0">
-          <div className="Header_Bell position-relative">
+        {/* Logo */}
+        <div className="col-1 col-md-6 Header_Logo d-flex align-items-center">
+          <img src="/image/logo.png" alt="Cotien Logo" />
+        </div>
+
+        {/* Header Actions */}
+
+        <div className=" col-7 col-md-4 Header_Items d-flex align-items-center justify-content-end">
+          {/* Notifications */}
+          <div
+            className="Header_Bell position-relative has-notifications"
+            aria-label="Notifications (3 unread)"
+            role="button"
+            tabIndex="0"
+            onKeyDown={(e) =>
+              e.key === 'Enter' && console.log('Notifications clicked')
+            }
+          >
             <i className="bi bi-bell-fill"></i>
-            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              3<span className="visually-hidden">unread messages</span>
-            </span>
+            <span className="notification-badge urgent">3</span>
+            <div className="notification-ping"></div>
           </div>
-          <div className="Header_Admin">
-            <i className="bi bi-person-check-fill"></i>
-            <span className="Header_Admin_Name d-none d-md-inline ms-1">
-              Admin
-            </span>
+
+          {/* User Profile */}
+          <div className="Header_Admin" role="button" aria-label="User Profile">
+            <i className="bi bi-person-circle"></i>
+            <span className="Header_Admin_Name ">Admin</span>
           </div>
-          <div className="Header_Logout">
+
+          {/* Logout */}
+          <div className="Header_Logout" role="button" aria-label="Logout">
             <i className="bi bi-box-arrow-right"></i>
-            <span className="Header_Admin_Name d-none d-md-inline ms-1">
-              Logout
-            </span>
+            <span className="Header_Admin_Name ">Logout</span>
           </div>
         </div>
-      </header>
+      </div>
     </>
   )
 }

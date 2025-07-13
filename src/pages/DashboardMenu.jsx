@@ -45,7 +45,7 @@ function DashboardMenu() {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid mt-5">
         <div className="row mt-3">
           <div className="col-12">
             {/* Stats Cards */}
@@ -360,7 +360,7 @@ function DashboardMenu() {
                 </div>
               </div>
 
-              <div className="card p-4 mt-3">
+              <div className="card p-2 mt-3">
                 <div className="fw-bold mb-4">Hoạt động gần đây</div>
                 <div className="timeline-container">
                   {/* Đường dọc timeline */}
