@@ -49,7 +49,7 @@ function DashboardMenu() {
         <div className="row mt-3">
           <div className="col-12">
             {/* Stats Cards */}
-            <div className="row mb-4 ">
+            <div className="row mb-4 pe-4 ps-4">
               <div className="col-md-3 mb-3 card-container">
                 <div className="card bg-white text-black">
                   <div className="card-body d-flex align-items-center justify-content-between gap-4 flex-wrap">
@@ -118,7 +118,7 @@ function DashboardMenu() {
 
               {/* Recent Projects */}
               <div className="row ">
-                <div className="col-12">
+                <div className="col-12  pe-0 me-0 w-100">
                   <div className="card shadow-lg">
                     <div className="card-header d-flex align-items-center justify-content-between p-4 border-bottom">
                       <div className="mb-0">
@@ -134,9 +134,9 @@ function DashboardMenu() {
                         Xem tất cả
                       </button>
                     </div>
-                    <div className="card-investment">
-                      <div className="table-responsive modern-table">
-                        <table className="table">
+                    <div className="card-investment pe-0 me-0 w-100">
+                      <div className="table-responsive modern-table  pe-0 me-0">
+                        <table className="table  pe-0 me-0 w-100">
                           <thead>
                             <tr>
                               <th>
@@ -264,9 +264,9 @@ function DashboardMenu() {
               <div className="row mt-5">
                 <div className="col-12">
                   <h4 className="mb-3">Dự án nổi bật</h4>
-                  <div className="d-flex flex-wrap justify-content-between justify-content-lg-between">
+                  <div className="d-flex flex-wrap justify-content-between justify-content-lg-between gap-4">
                     <div
-                      className="card mb-4"
+                      className="card mb-4 me-2"
                       style={{ width: '100%', maxWidth: '18rem' }}
                     >
                       <img
@@ -289,7 +289,7 @@ function DashboardMenu() {
                     </div>
 
                     <div
-                      className="card mb-4"
+                      className="card mb-4 me-2"
                       style={{ width: '100%', maxWidth: '18rem' }}
                     >
                       <img
@@ -312,7 +312,7 @@ function DashboardMenu() {
                     </div>
 
                     <div
-                      className="card mb-4"
+                      className="card mb-4 me-2"
                       style={{ width: '100%', maxWidth: '18rem' }}
                     >
                       <img
@@ -359,28 +359,29 @@ function DashboardMenu() {
                   </div>
                 </div>
               </div>
+              <div className="p-3 pe-4">
+                <div className="card p-3 mt-3">
+                  <div className="fw-bold mb-4">Hoạt động gần đây</div>
+                  <div className="timeline-container">
+                    {/* Đường dọc timeline */}
+                    <div className="timeline-line"></div>
 
-              <div className="card p-2 mt-3">
-                <div className="fw-bold mb-4">Hoạt động gần đây</div>
-                <div className="timeline-container">
-                  {/* Đường dọc timeline */}
-                  <div className="timeline-line"></div>
+                    {activities.map((act, index) => (
+                      <div className="timeline-item d-flex mb-4" key={index}>
+                        {/* Icon container */}
+                        <div className="timeline-icon-container">
+                          <div className="timeline-icon">{act.icon}</div>
+                        </div>
 
-                  {activities.map((act, index) => (
-                    <div className="timeline-item d-flex mb-4" key={index}>
-                      {/* Icon container */}
-                      <div className="timeline-icon-container">
-                        <div className="timeline-icon">{act.icon}</div>
+                        {/* Nội dung */}
+                        <div className="timeline-content ms-3 ms-md-4">
+                          <h6 className="fw-bold mb-1">{act.title}</h6>
+                          <p className="mb-1">{act.description}</p>
+                          <small className="text-muted">{act.time}</small>
+                        </div>
                       </div>
-
-                      {/* Nội dung */}
-                      <div className="timeline-content ms-3 ms-md-4">
-                        <h6 className="fw-bold mb-1">{act.title}</h6>
-                        <p className="mb-1">{act.description}</p>
-                        <small className="text-muted">{act.time}</small>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
