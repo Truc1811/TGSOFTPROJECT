@@ -81,7 +81,7 @@ const ExploreProject = () => {
           {/* Hot Projects */}
           <div className="mt-5 p-2">
             <div className="col-12">
-              <div className="row d-flex flex-wrap justify-content-between gap-1 mt-5 ">
+              <div className="row d-flex flex-wrap gap-15  mt-5 ">
                 <div className="card" style={{ width: '23rem' }}>
                   <div style={{ position: 'relative', overflow: 'hidden' }}>
                     <img
@@ -212,7 +212,7 @@ const ExploreProject = () => {
                   </div>
                 </div>
 
-                <div className="card mt-2" style={{ width: '23rem' }}>
+                <div className="card " style={{ width: '23rem' }}>
                   <div style={{ position: 'relative', overflow: 'hidden' }}>
                     <img
                       className="p-0"
@@ -335,7 +335,7 @@ const ExploreProject = () => {
                   </div>
                 </div>
 
-                <div className="card mt-2" style={{ width: '23rem' }}>
+                <div className="card " style={{ width: '23rem' }}>
                   <div style={{ position: 'relative', overflow: 'hidden' }}>
                     <img
                       className="p-0"
