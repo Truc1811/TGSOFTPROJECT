@@ -90,20 +90,20 @@
 
 
 
-.Header_Bell:hover,
+/* .Header_Bell:hover,
 .Header_Admin:hover,
 .Header_Logout:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
-}
+} */
 
-.Header_Bell:active,
+/* .Header_Bell:active,
 .Header_Admin:active,
 .Header_Logout:active {
     transform: translateY(0);
-}
+} */
 
 /* .Header_Bell i,
 .Header_Admin i,
@@ -115,12 +115,12 @@
     transition: all 0.3s ease;
 } */
 
-.Header_Bell:hover i,
+/* .Header_Bell:hover i,
 .Header_Admin:hover i,
 .Header_Logout:hover i {
     color: #ffd700;
-    transform: scale(1.1);
-}
+    transform: scale(0.8);
+} */
 
 /* .Header_Admin_Name {
     color: white;
@@ -132,10 +132,10 @@
     transition: all 0.3s ease;
 } */
 
-.Header_Admin:hover .Header_Admin_Name,
+/* .Header_Admin:hover .Header_Admin_Name,
 .Header_Logout:hover .Header_Admin_Name {
     color: #ffd700;
-}
+} */
 
 /* Enhanced Notification Bell - Optimized */
 /* .Header_Bell {
@@ -154,12 +154,12 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 } */
 
-.Header_Bell:hover {
+/* .Header_Bell:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 215, 0, 0.3);
-}
+} */
 
 .Header_Bell i {
   color: white;
@@ -170,7 +170,7 @@
 }
 
 .Header_Bell:hover i {
-  color: #ffd700;
+  /* color: #ffd700; */
   animation: bellRing 0.6s ease-in-out;
 }
 
@@ -218,20 +218,20 @@
 }
 
 /* Badge Pulse Animation - Smoother */
-@keyframes badgePulse {
+/* @keyframes badgePulse {
   0% {
     transform: scale(1);
     box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
   }
   50% {
     transform: scale(1.15);
-    box-shadow: 0 6px 16px rgba(255, 71, 87, 0.6);
+    box-shadow: 0 3px 13px rgba(255, 71, 87, 0.6);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+    box-shadow: 0 2px 8px rgba(255, 71, 87, 0.4);
   }
-}
+} */
 
 /* Ping Effect Animation - More Subtle */
 @keyframes pingEffect {
@@ -249,22 +249,11 @@
   }
 }
 
-/* Notification dropdown indicator */
-.Header_Bell::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #ffd700, transparent);
-  transition: width 0.3s ease;
-}
 
-.Header_Bell:hover::after {
+
+/* .Header_Bell:hover::after {
   width: 80%;
-}
+} */
 
 /* Mobile Responsive for Notification Bell */
 @media (max-width: 768px) {
@@ -438,18 +427,17 @@
         gap: 4px;
     } */
     
-    .Header_Bell,
+    /* .Header_Bell,
     .Header_Admin,
     .Header_Logout {
         padding: 6px 8px;
         min-height: 34px;
         border-radius: 6px;
-    }
-    
+    } */
     .Header_Bell i,
     .Header_Admin i,
     .Header_Logout i {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
     
     /* Hide all text labels on mobile */
@@ -828,9 +816,12 @@
   position: relative;
 }
 
-.Header_Bell.has-notifications:hover {
+
+/* Removed border effect on hover for .Header_Bell */
+/* .Header_Bell.has-notifications:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.3);
-}
+  border-color: initial;
+} */
 
 /* Touch feedback for mobile */
 @media (max-width: 768px) {
@@ -839,6 +830,7 @@
     background: rgba(255, 255, 255, 0.25);
   }
 }
+
 
 /* Large desktop notification bell */
 @media (min-width: 1200px) {

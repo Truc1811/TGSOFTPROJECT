@@ -1,0 +1,20 @@
+.bandage {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.bandage:hover {
+  background-color: #7B2CBF; /* tím */
+  color: white;
+}
+
+.bandage.active {
+  background-color: #7B2CBF;
+  color: white;
+}

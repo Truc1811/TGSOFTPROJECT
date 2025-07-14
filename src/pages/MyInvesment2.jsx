@@ -4,7 +4,7 @@ import './MyInvestment2.css'
 const MyInvestment2 = () => {
   return (
     <>
-      <div className="container-fluid mt-5">
+      <div className="container-fluid mt-5 p-4">
         <div className="row mt-3">
           <div className="col-12">
             {/* Stats Cards */}
@@ -78,7 +78,7 @@ const MyInvestment2 = () => {
           </div>
         </div>
 
-        <div className="row mt-3">
+        <div className="row mt-3 p-2">
           <div className="col-12 bg-white">
             <div className="row mb-4 text-center mt-3 bg-white">
               {/* Labels hiển thị ở desktop */}
@@ -203,7 +203,7 @@ const MyInvestment2 = () => {
           </div>
         </div>
 
-        <div className="row mt-3">
+        <div className="row mt-3 ps-2 pe-2">
           <div className="col-12 bg-white">
             <div className="row mb-4 text-center mt-3 bg-white d-flex">
               {/* Labels hiển thị ở desktop */}
@@ -413,7 +413,7 @@ const MyInvestment2 = () => {
                         <td>@fat</td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
+                        <th scope="row" >3</th>
                         <td>John</td>
                         <td>Doe</td>
                         <td>@social</td>
