@@ -8,7 +8,7 @@ import MyInvestment from './pages/MyInvestment'
 import MyInvestment2 from './pages/MyInvesment2'
 import CreateCampaign from './pages/CreateCampaign'
 import ExploreProject from './pages/ExploreProject'
-
+import EWallet from './pages/EWallet'
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
             <Route path="/khoandautucuatoi" element={<MyInvestment />} />
             <Route path="/duancuatoi" element={<MyInvestment2 />} />
             <Route path="/taochiendichgoivon" element={<CreateCampaign />} />
-            <Route path="/khamphaduan" element={<ExploreProject/>} />
+            <Route path="/khamphaduan" element={<ExploreProject />} />
+            <Route path="/vidientu" element={<EWallet />} />
           </Routes>
         </Layout>
       </Router>

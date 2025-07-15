@@ -816,14 +816,7 @@
   position: relative;
 }
 
-
-/* Removed border effect on hover for .Header_Bell */
-/* .Header_Bell.has-notifications:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.3);
-  border-color: initial;
-} */
-
-/* Touch feedback for mobile */
+/* Touch feedback for mobile 
 @media (max-width: 768px) {
   .Header_Bell:active {
     transform: scale(0.95);

@@ -1,0 +1,10 @@
+
+button {
+  border-radius: 15px;
+  padding: 8px 12px;
+  background-color: linear-gradient(to right,#6f42c1, ); /* hoặc màu bạn muốn */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}

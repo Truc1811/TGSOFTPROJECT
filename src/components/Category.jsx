@@ -152,52 +152,64 @@ function Category() {
 
       {/* Menu customers */}
       <div className="Customer" onClick={toggleCustomer}>
+         <Link
+          to="/duancuatoi"
+          className="d-flex align-items-center"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
         <i className="bi bi-people-fill"></i>
-        <span className="Customer_Title">Khách hàng</span>
+        <span className="Customer_Title">Dự án của tôi</span>
         {isOpenCustomer }
+        </Link>
       </div>
       {isOpenCustomer }
 
       {/* Menu investment */}
       <div className="Investment" onClick={toggleInvestment}>
+          <Link
+          to="/taochiendichgoivon"
+          className="d-flex align-items-center"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
         <i className="bi bi-card-list"></i>
         <span className="Investment_Title">Gọi vốn đầu tư</span>
         {isOpenInvestment }
+        </Link>
       </div>
       {isOpenInvestment }
       {/* Menu loan */}
       <div className="Loan" onClick={toggleLoan}>
+         <Link
+          to="/taochiendichgoivon"
+          className="d-flex align-items-center"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
         <i className="bi bi-card-list"></i>
-        <span className="Loan_Title">Khoản vay</span>
-        {isOpenLoan ? (
-          <i class="bi bi-chevron-up"></i>
-        ) : (
-          <i class="bi bi-chevron-down"></i>
-        )}
+        <span className="Loan_Title">Tạo chiến dịch gọi vốn</span>
+        {isOpenLoan }
+        </Link>
       </div>
-      {isOpenLoan && <LoanList />}
+      {isOpenLoan }
 
       {/* Menu  investment2 */}
       <div className="Investment2" onClick={toggleInvestment2}>
+         <Link
+          to="/khamphaduan"
+          className="d-flex align-items-center"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
         <i className="bi bi-currency-exchange"></i>
-        <span className="Investment2_Title">Đầu tư</span>
-        {isOpenInvestment2 ? (
-          <i class="bi bi-chevron-up"></i>
-        ) : (
-          <i class="bi bi-chevron-down"></i>
-        )}
+        <span className="Investment2_Title">Khám phá dự án</span>
+         </Link>
+        {isOpenInvestment2 }
       </div>
-      {isOpenInvestment2 && <Investment2List />}
+      {isOpenInvestment2 }
       <div className="Withdrawal" onClick={toggleWithdrawal}>
         <i className="bi bi-cash-coin"></i>
         <span className="Withdrawal_Title">Nạp rút tiền</span>
-        {isOpenWithdraw ? (
-          <i class="bi bi-chevron-up"></i>
-        ) : (
-          <i class="bi bi-chevron-down"></i>
-        )}
+        {isOpenWithdraw }
       </div>
-      {isOpenWithdraw && <WithdrawList />}
+      {isOpenWithdraw }
       <div className="Services" onClick={toggleService}>
         <i className="bi bi-file-earmark-medical"></i>
         <span className="Services_Title">Thu phí dịch vụ</span>
