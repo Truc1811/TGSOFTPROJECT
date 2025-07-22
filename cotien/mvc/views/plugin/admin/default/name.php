@@ -1,0 +1,1 @@
+<?php echo $value->name_t; ?>
